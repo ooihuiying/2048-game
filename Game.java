@@ -102,20 +102,8 @@ class Board {
 
     // right to left
     public void slide(Cell[] row){
-        System.out.println("??????1111");
-        for(int i=0; i<row.length; i++){
-            System.out.print(row[i]);
-            System.out.print(" ");
-        }
-        System.out.println("");
         putNonZerosToLeft(row);
-        System.out.println("??????2222");
-        for(int i=0; i<row.length; i++){
-            System.out.print(row[i]);
-            System.out.print(" ");
-        }
-        System.out.println("");
-
+    
         // Combine similar numbers
         for(int i=0; i<row.length-1; i++){
             if(row[i].value==row[i+1].value){
