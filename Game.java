@@ -18,6 +18,11 @@ public class Game{
             } else {
                 service.move(Move.RIGHT);
             }
+
+            if(service.hasGameBeenWon()){
+                System.out.println("CONGRATS!!! 2048 number has been formed :)");
+                break;
+            }
         }
         sc.close();
     }
